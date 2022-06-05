@@ -1,24 +1,32 @@
-
-
-
-
-function sumar(a: number, b: number): number { //especificamo los tipos en los paramatrros
+//especificamo los tipos en los paramatrros
+function sumar(a: number, b: number): number {
     return a + b;
 }
 
-
-const sumar2 = function (a: number, b: number): number { //especificamo los tipos en los paramatrros
+//especificamo los tipos en los paramatrros
+const sumar2 = function (a: number, b: number): number {
     return a + b;
+};
+
+//especificamo los tipos en los paramatrros
+const sumar3 = (a: number, b: number): number => {
+    return a + b;
+};
+
+//otras formas de crear function
+const sumar4 = (a: number, b: number): number => a + b;
+
+const resultado = sumar(1220, 20);
+
+console.log(resultado.toString());
+
+//parametros con valor por defectos y opcionales con "?"
+function multiplicar(num1: number, num2?: number, base: number = 10) {
+
+    return num1 * base;
 }
 
+multiplicar(5, 2) // esto es igual a 50 ya que la funcion toma la base
 
-const sumar3 = (a: number, b: number): number => { //especificamo los tipos en los paramatrros
-    return a + b;
-}
+let xxxx;
 
-const sumar4 = (a: number, b: number): number => a + b; //otras formas de crear function
-
-
-const resultado = sumar(10, 20);
-
-console.log(resultado.toString()); 
