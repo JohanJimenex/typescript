@@ -7,13 +7,15 @@ let arrHabilidades3: (number | string | boolean)[] = []; //especifica los tipos 
 let arrHabilidades2: string[] = []; //Restringir el tipo de dato a uno solo
 
 
-//Es como una clase que se usa para hererar, pero no par crear objetos de él y obliga a que se implementen sus propiedades
+//Es como una clase que se usa para oblicar a otras clases a ue implementen las propeidades,
+//pero no para crear objetos de él
 //En TypeScript se usa para controlar las propiedades y tipos de los objetos
 interface Player {
     nombre: string,
     edad: number,
     estado: boolean,
     habilidades: string[],
+    funcSaltar?: ()=> void,
     ciudad?: string // ? es una propeidad opcional
 }
 

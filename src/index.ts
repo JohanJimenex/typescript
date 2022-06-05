@@ -28,5 +28,21 @@ function multiplicar(num1: number, num2?: number, base: number = 10) {
 
 multiplicar(5, 2) // esto es igual a 50 ya que la funcion toma la base
 
-let xxxx;
+interface Player2 {
 
+    nombre: string,
+    puntosVida: number,
+    saltar: () => void
+
+}
+
+const jugador: Player2{
+    nombre: number = 1,
+
+}
+
+function curar(personaje: Player2, curarX): void {
+
+    personaje.puntosVida += 10
+
+}
