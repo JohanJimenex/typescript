@@ -1,8 +1,8 @@
 //Genericos
 
 // <T> la 'T' se es una convencion por decir "tipo", se usa para que la funcion pueda retornar el tipo de dato
-//si no se especifica esto entonces el tipo de ndato que retorne será "any", (en javascript si funcionaria sin <T> )
-function queTipoSoy<T>(parametro: T) {
+//si no se especifica esto entonces el tipo de dato que retorne será "any", (en javascript si funcionaria sin <T> )
+function queTipoSoy<T>(parametro: T): T {
     return parametro;
 }
 
